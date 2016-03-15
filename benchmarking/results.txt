@@ -1,0 +1,66 @@
+E:\jNmatrix\benchmarking>jruby elements10.rb
+#<Java::Nmatrix::Jnmatrix:0x13a5fe33>
+#<Java::Nmatrix::Jnmatrix:0x5f9d02cb>
+#<Java::Nmatrix::Jnmatrix:0x6536e911>
+Benchmarking for Addition
+  0.021000   0.000000   0.021000 (  0.022014)
+Benchmarking for Subtraction
+  0.001000   0.000000   0.001000 (  0.000338)
+Benchmarking for Multiplication
+  0.000000   0.000000   0.000000 (  0.000536)
+
+E:\jNmatrix\benchmarking>jruby elements100.rb
+#<Java::Nmatrix::Jnmatrix:0x5abca1e0>
+#<Java::Nmatrix::Jnmatrix:0x6d7b4f4c>
+Benchmarking for Addition
+  0.027000   0.000000   0.027000 (  0.027732)
+Benchmarking for Subtraction
+  0.001000   0.000000   0.001000 (  0.000713)
+Benchmarking for Multiplication
+  0.000000   0.000000   0.000000 (  0.000526)
+
+E:\jNmatrix\benchmarking>jruby elements1000.rb
+#<Java::Nmatrix::Jnmatrix:0x5f9d02cb>
+#<Java::Nmatrix::Jnmatrix:0x6536e911>
+#<Java::Nmatrix::Jnmatrix:0x3e9b1010>
+Benchmarking for Addition
+  0.025000   0.000000   0.025000 (  0.025717)
+Benchmarking for Subtraction
+  0.002000   0.000000   0.002000 (  0.001213)
+Benchmarking for Multiplication
+  0.008000   0.000000   0.008000 (  0.007547)
+
+
+E:\jNmatrix\benchmarking>jruby elements10,000.rb
+#<Java::Nmatrix::Jnmatrix:0x4e9ba398>
+#<Java::Nmatrix::Jnmatrix:0x13a5fe33>
+Benchmarking for Addition
+  0.033000   0.000000   0.033000 (  0.033280)
+Benchmarking for Subtraction
+  0.006000   0.000000   0.006000 (  0.006300)
+Benchmarking for Multiplication
+  0.023000   0.000000   0.023000 (  0.023288)
+
+
+E:\jNmatrix\benchmarking>jruby elements100,000.rb
+#<Java::Nmatrix::Jnmatrix:0x5f9d02cb>
+#<Java::Nmatrix::Jnmatrix:0x6536e911>
+#<Java::Nmatrix::Jnmatrix:0x3e9b1010>
+Benchmarking for Addition
+  0.059000   0.000000   0.059000 (  0.058965)
+Benchmarking for Subtraction
+  0.026000   0.000000   0.026000 (  0.025535)
+Benchmarking for Multiplication
+  0.400000   0.000000   0.400000 (  0.400301)
+
+
+
+E:\jNmatrix\benchmarking>jruby elements1,000,000.rb
+#<Java::Nmatrix::Jnmatrix:0x4e9ba398>
+#<Java::Nmatrix::Jnmatrix:0x13a5fe33>
+Benchmarking for Addition
+  0.197000   0.000000   0.197000 (  0.195729)
+Benchmarking for Subtraction
+  0.162000   0.000000   0.162000 (  0.161817)
+Benchmarking for Multiplication
+  9.198000   0.000000   9.198000 (  9.198845)
