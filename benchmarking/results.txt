@@ -1,3 +1,17 @@
+#############################################################
+
+                    Nmatrix Benchmarking
+
+#############################################################
+
+
+
+#############################################################
+
+                    Jruby 9.0.5.0
+
+#############################################################
+
 E:\jNmatrix\benchmarking>jruby elements10.rb
 #<Java::Nmatrix::Jnmatrix:0x13a5fe33>
 #<Java::Nmatrix::Jnmatrix:0x5f9d02cb>
@@ -64,3 +78,52 @@ Benchmarking for Subtraction
   0.162000   0.000000   0.162000 (  0.161817)
 Benchmarking for Multiplication
   9.198000   0.000000   9.198000 (  9.198845)
+
+#############################################################
+
+                    Ruby 2.2.1
+
+#############################################################
+
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements10.rb
+Benchmarking for Addition
+  0.000000   0.000000   0.000000 (  0.000076)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.000019)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.000009)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements100.rb
+Benchmarking for Addition
+  0.000000   0.000000   0.000000 (  0.000119)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.000050)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.000012)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements1,000.rb
+Benchmarking for Addition
+  0.000000   0.000000   0.000000 (  0.000266)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.000298)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.000139)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements10,000.rb
+Benchmarking for Addition
+  0.010000   0.000000   0.010000 (  0.002375)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.002561)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.001307)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements100,000.rb
+Benchmarking for Addition
+  0.030000   0.000000   0.030000 (  0.025387)
+Benchmarking for Subtraction
+  0.020000   0.000000   0.020000 (  0.022123)
+Benchmarking for Matrix Multiplication
+  0.100000   0.000000   0.100000 (  0.103132)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements1,000,000.rb
+Benchmarking for Addition
+  0.240000   0.000000   0.240000 (  0.237774)
+Benchmarking for Subtraction
+  0.230000   0.000000   0.230000 (  0.224446)
+Benchmarking for Matrix Multiplication
+  1.080000   0.000000   1.080000 (  1.086582)
