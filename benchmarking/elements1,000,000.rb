@@ -14,5 +14,14 @@ puts Benchmark.measure{add(a,b)}
 puts "Benchmarking for Subtraction"
 puts Benchmark.measure{subtract(a,b)}
 
-puts "Benchmarking for Multiplication"
+puts "Benchmarking for Multiplication 1st run"
+puts Benchmark.measure{multiply(a,b)}
+
+puts "Benchmarking for Multiplication 2nd run"
+puts Benchmark.measure{multiply(a,b)}
+
+puts "Benchmarking for Multiplication 3rd run"
+puts Benchmark.measure{multiply(a,b)}
+
+puts "Benchmarking for Multiplication 4th run"
 puts Benchmark.measure{multiply(a,b)}

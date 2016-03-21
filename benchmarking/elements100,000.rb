@@ -21,3 +21,4 @@ puts Benchmark.measure{subtract(b,c)}
 
 puts "Benchmarking for Multiplication"
 puts Benchmark.measure{multiply(a,b)}
+

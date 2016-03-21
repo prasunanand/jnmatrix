@@ -3,6 +3,7 @@ package nmatrix;
 import org.apache.commons.math3.linear.RealMatrix;
 import org.apache.commons.math3.linear.Array2DRowRealMatrix;
 import org.apache.commons.math3.linear.LUDecomposition;
+import org.apache.commons.math3.linear.MatrixUtils;
 import org.apache.commons.math3.linear.ArrayRealVector;
 import org.apache.commons.math3.linear.RealVector;
 import org.apache.commons.math3.linear.DecompositionSolver;
@@ -22,6 +23,17 @@ public class Linear {
 	}
 	
 	//Matrix Addition
+	public RealMatrix matUtilCreate(int[] shape, double[] OneDArray, boolean flag) {
+		double[][] TwoDArray = new double[shape[0]][shape[1]];
+		for (int i=0,index=0; i < shape[0];i++ ){
+			for(int j=0; j< shape[1]; j++){
+				TwoDArray[i][j] = OneDArray[index];
+				index++;
+			}
+			
+		}
+		return MatrixUtils.createRealMatrix(TwoDArray);
+	}
 	
 	public RealMatrix matrixAdditionFunction(RealMatrix a,RealMatrix b){
 		return a.add(b);
