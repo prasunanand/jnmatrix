@@ -129,3 +129,140 @@ Benchmarking for Subtraction
   0.230000   0.000000   0.230000 (  0.224446)
 Benchmarking for Matrix Multiplication
   1.080000   0.000000   1.080000 (  1.086582)
+
+#############################################################
+
+                    Ruby 2.2.1 Nmatrix-ATLAS
+
+#############################################################
+
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements10.rb
+Benchmarking for Addition
+  0.000000   0.000000   0.000000 (  0.000058)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.000018)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.000043)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements100.rb
+Benchmarking for Addition
+  0.000000   0.000000   0.000000 (  0.000094)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.000037)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.000046)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements1,000.rb
+Benchmarking for Addition
+  0.000000   0.000000   0.000000 (  0.000255)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.000327)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.000106)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements10,000.rb
+Benchmarking for Addition
+  0.000000   0.000000   0.000000 (  0.002316)
+Benchmarking for Subtraction
+  0.010000   0.000000   0.010000 (  0.002105)
+Benchmarking for Matrix Multiplication
+  0.000000   0.000000   0.000000 (  0.000241)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements100,000.rb
+Benchmarking for Addition
+  0.020000   0.000000   0.020000 (  0.021740)
+Benchmarking for Subtraction
+  0.030000   0.000000   0.030000 (  0.021710)
+Benchmarking for Matrix Multiplication
+  0.010000   0.000000   0.010000 (  0.012301)
+prasun@ubuntu:~/dev/sciruby/benchmarking$ ruby elements1,000,000.rb
+Benchmarking for Addition
+  0.210000   0.000000   0.210000 (  0.220360)
+Benchmarking for Subtraction
+  0.210000   0.010000   0.220000 (  0.218893)
+Benchmarking for Matrix Multiplication
+  0.120000   0.000000   0.120000 (  0.119474)
+
+#############################################################
+
+                    JRuby Nmatrix-ATLAS
+
+#############################################################
+
+prasun@ubuntu:~/dev/sciruby/jnmatrix/benchmarking/JRUBY-ATLAS$ jruby elements10.rb
+#<Java::Nmatrix::Jnmatrix:0x6c49835d>
+#<Java::Nmatrix::Jnmatrix:0x7d0587f1>
+#<Java::Nmatrix::Jnmatrix:0x4f063c0a>
+Benchmarking for Addition
+  0.040000   0.010000   0.050000 (  0.037011)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.006039)
+Benchmarking for Multiplication
+  0.090000   0.000000   0.090000 (  0.091163)
+-- org.jblas INFO Deleting /tmp/jblas3184586679650304991/libjblas_arch_flavor.so
+-- org.jblas INFO Deleting /tmp/jblas3184586679650304991/libjblas.so
+-- org.jblas INFO Deleting /tmp/jblas3184586679650304991
+prasun@ubuntu:~/dev/sciruby/jnmatrix/benchmarking/JRUBY-ATLAS$ jruby elements100.rb
+#<Java::Nmatrix::Jnmatrix:0x7494e528>
+#<Java::Nmatrix::Jnmatrix:0x9660f4e>
+Benchmarking for Addition
+  0.060000   0.000000   0.060000 (  0.051405)
+Benchmarking for Subtraction
+  0.010000   0.000000   0.010000 (  0.007240)
+Benchmarking for Multiplication
+  0.080000   0.000000   0.080000 (  0.090969)
+-- org.jblas INFO Deleting /tmp/jblas710925261026801254/libjblas_arch_flavor.so
+-- org.jblas INFO Deleting /tmp/jblas710925261026801254/libjblas.so
+-- org.jblas INFO Deleting /tmp/jblas710925261026801254
+prasun@ubuntu:~/dev/sciruby/jnmatrix/benchmarking/JRUBY-ATLAS$ jruby elements1,000.rb
+#<Java::Nmatrix::Jnmatrix:0x7d0587f1>
+#<Java::Nmatrix::Jnmatrix:0x4f063c0a>
+#<Java::Nmatrix::Jnmatrix:0x614ddd49>
+Benchmarking for Addition
+  0.050000   0.000000   0.050000 (  0.043363)
+Benchmarking for Subtraction
+  0.000000   0.000000   0.000000 (  0.004312)
+Benchmarking for Multiplication
+  0.090000   0.000000   0.090000 (  0.084880)
+-- org.jblas INFO Deleting /tmp/jblas9125657936543238901/libjblas_arch_flavor.so
+-- org.jblas INFO Deleting /tmp/jblas9125657936543238901/libjblas.so
+-- org.jblas INFO Deleting /tmp/jblas9125657936543238901
+prasun@ubuntu:~/dev/sciruby/jnmatrix/benchmarking/JRUBY-ATLAS$ jruby elements10,000.rb
+#<Java::Nmatrix::Jnmatrix:0x7c29daf3>
+#<Java::Nmatrix::Jnmatrix:0x6c49835d>
+Benchmarking for Addition
+  0.060000   0.000000   0.060000 (  0.056543)
+Benchmarking for Subtraction
+  0.030000   0.000000   0.030000 (  0.023851)
+Benchmarking for Multiplication
+  0.060000   0.010000   0.070000 (  0.074115)
+-- org.jblas INFO Deleting /tmp/jblas5872620784409066682/libjblas_arch_flavor.so
+-- org.jblas INFO Deleting /tmp/jblas5872620784409066682/libjblas.so
+-- org.jblas INFO Deleting /tmp/jblas5872620784409066682
+prasun@ubuntu:~/dev/sciruby/jnmatrix/benchmarking/JRUBY-ATLAS$ jruby elements100,000.rb
+#<Java::Nmatrix::Jnmatrix:0x7d0587f1>
+#<Java::Nmatrix::Jnmatrix:0x4f063c0a>
+#<Java::Nmatrix::Jnmatrix:0x614ddd49>
+Benchmarking for Addition
+  0.100000   0.000000   0.100000 (  0.097024)
+Benchmarking for Subtraction
+  0.050000   0.000000   0.050000 (  0.047414)
+Benchmarking for Multiplication
+  0.140000   0.010000   0.150000 (  0.156419)
+-- org.jblas INFO Deleting /tmp/jblas3139901707075742485/libjblas_arch_flavor.so
+-- org.jblas INFO Deleting /tmp/jblas3139901707075742485/libjblas.so
+-- org.jblas INFO Deleting /tmp/jblas3139901707075742485
+prasun@ubuntu:~/dev/sciruby/jnmatrix/benchmarking/JRUBY-ATLAS$ jruby elements1,000,000.rb
+#<Java::Nmatrix::Jnmatrix:0x131276c2>
+#<Java::Nmatrix::Jnmatrix:0x711f39f9>
+Benchmarking for Addition
+  0.340000   0.000000   0.340000 (  0.338741)
+Benchmarking for Subtraction
+  0.370000   0.010000   0.380000 (  0.375483)
+Benchmarking for Multiplication 1st run
+  0.490000   0.020000   0.510000 (  0.511302)
+Benchmarking for Multiplication 2nd run
+  0.340000   0.000000   0.340000 (  0.347717)
+Benchmarking for Multiplication 3rd run
+  0.380000   0.020000   0.400000 (  0.396916)
+Benchmarking for Multiplication 4th run
+  0.370000   0.010000   0.380000 (  0.380649)
+-- org.jblas INFO Deleting /tmp/jblas7075785123848205463/libjblas_arch_flavor.so
+-- org.jblas INFO Deleting /tmp/jblas7075785123848205463/libjblas.so
+-- org.jblas INFO Deleting /tmp/jblas7075785123848205463

@@ -31,9 +31,9 @@ public class Main {
 		
 		Linear a = new Linear();
 //		RealMatrix m4 = a.matrixCreation(new int[]{3000,3000},arr,false);
-		RealMatrix m = MatrixUtils.createRealMatrix(arr);
+//		RealMatrix m = MatrixUtils.createRealMatrix(arr);
 		long startTime = System.currentTimeMillis();
-	    RealMatrix m5 = m.multiply(m);
+//	    RealMatrix m5 = m.multiply(m);
 //	    System.out.println(m5);
 	    long endTime = System.currentTimeMillis();
 	    System.out.println("Total execution time:"+ (endTime - startTime) +" ms"); 
