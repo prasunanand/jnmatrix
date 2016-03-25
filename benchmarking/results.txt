@@ -8,7 +8,7 @@
 
 #############################################################
 
-                    Jruby 9.0.5.0
+                    Jruby 9.0.5.0 -APACHE COMMONS MATH
 
 #############################################################
 
@@ -80,6 +80,76 @@ Benchmarking for Multiplication 3rd run
   0.975000   0.000000   0.975000 (  0.973910)
 Benchmarking for Multiplication 4th run
   0.975000   0.000000   0.975000 (  0.974643)
+
+
+
+
+#############################################################
+
+                    Jruby 9.0.5.0 -MDARRAY
+
+#############################################################
+
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements10.rb"
+Benchmarking for Addition
+  0.004000   0.000000   0.004000 (  0.005507)
+Benchmarking for Multiplication
+  0.005000   0.000000   0.005000 (  0.003041)
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements100.rb"
+Benchmarking for Addition
+  0.009000   0.000000   0.009000 (  0.005844)
+Benchmarking for Multiplication 1st run
+  0.000000   0.000000   0.000000 (  0.003104)
+Benchmarking for Multiplication 2nd run
+  0.000000   0.000000   0.000000 (  0.000664)
+Benchmarking for Multiplication 3rd run
+  0.005000   0.000000   0.005000 (  0.001859)
+Benchmarking for Multiplication 4th run
+  0.005000   0.000000   0.005000 (  0.000626)
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements10.rb"
+Benchmarking for Addition
+  0.004000   0.000000   0.004000 (  0.005620)
+Benchmarking for Multiplication
+  0.000000   0.000000   0.000000 (  0.003899)
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements100.rb"
+Benchmarking for Addition
+  0.004000   0.000000   0.004000 (  0.005840)
+Benchmarking for Multiplication 1st run
+  0.000000   0.000000   0.000000 (  0.003202)
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements1,000.rb"
+Benchmarking for Addition
+  0.009000   0.000000   0.009000 (  0.006664)
+Benchmarking for Multiplication
+  0.005000   0.000000   0.005000 (  0.007834)
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements10,000.rb"
+Benchmarking for Addition
+  0.009000   0.000000   0.009000 (  0.007294)
+Benchmarking for Multiplication 1st run
+  0.025000   0.000000   0.025000 (  0.025834)
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements100,000.rb"
+Benchmarking for Addition
+  0.014000   0.000000   0.014000 (  0.015492)
+Benchmarking for Multiplication
+  0.105000   0.000000   0.105000 (  0.104573)
+
+E:\jnmatrix\benchmarking\MDARRAY>jruby "elements1,000,000.rb"
+Benchmarking for Addition
+  0.024000   0.000000   0.024000 (  0.025244)
+Benchmarking for Multiplication 1st run
+  1.235000   0.000000   1.235000 (  1.236755)
+Benchmarking for Multiplication 2nd run
+  1.167000   0.000000   1.167000 (  1.169359)
+Benchmarking for Multiplication 3rd run
+  1.165000   0.000000   1.165000 (  1.166910)
+Benchmarking for Multiplication 4th run
+  1.230000   0.000000   1.230000 (  1.229151)
 
 #############################################################
 
